@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Homepage</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="MyBlog.css">
+    
+  </head>
+<body>
+  <script src="MyBlog.js"></script>
+  </body>
+</html>
+
+<button id="toggleDark" class="dark-btn">🌙</button>
+
+<header>
+  <h1>My Blog</h1>
+  <input type="text" id="search" placeholder="Search blogs...">
+</header>
+
+<div class="blogs-container">
+  <a href="blog.html?id=1" class="blog-card" data-aos="fade-up">
+    <img src="https://picsum.photos/600/300?1">
+    <h3 class="blog-title">How to Stay Productive</h3>
+  </a>
+
+  <a href="blog.html?id=2" class="blog-card" data-aos="fade-up">
+    <img src="https://picsum.photos/600/300?2">
+    <h3 class="blog-title">Exploring Nature</h3>
+  </a>
+
+  <a href="blog.html?id=3" class="blog-card" data-aos="fade-up">
+    <img src="https://picsum.photos/600/300?3">
+    <h3 class="blog-title">Tech Innovations 2025</h3>
+  </a>
+</div>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<button id="toggleDark" class="dark-btn">🌙</button>
+
+<div class="blog-container" data-aos="fade-up">
+  <h1 id="blogTitle">Loading...</h1>
+  <div id="blogContent"></div>
+</div>
+
+<div class="comments-box" data-aos="fade-up">
+  <h3>Comments</h3>
+  <textarea id="commentText" placeholder="Write a comment..."></textarea>
+  <button onclick="postComment()">Post</button>
+  <div id="commentsList"></div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>
